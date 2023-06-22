@@ -1,0 +1,35 @@
+{
+    "api": {
+        "host": "localhost",
+        "port": "8081"
+    },
+    "client": {
+        "port": "8080"
+    },
+    "database": {
+        "driver": "sqlite3",
+        "path": "../../database",
+        "fileName": "forum.db",
+        "imagesDir": "./database/images",
+        "schemesDir": "../../database/schema"
+    },
+    "auth": {
+        "accessTokenTTL": 1800,
+        "refreshTokenTTL": 43200
+    },
+    "websocket": {
+        "maxConnsForUser": 16,
+        "maxMessageSize": 2048,
+        "tokenWait": 10,
+        "writeWait": 10,
+        "pongWait": 60
+    },
+    "forum": {
+        "defaultMaleAvatar": "men.png",
+        "defaultFemaleAvatar": "women.png",
+        "postsForPage": 10,
+        "commentsForPage": 5,
+        "postsPreModerationIsEnabled": true,
+        "commentsPreModerationIsEnabled": true
+    }
+}
